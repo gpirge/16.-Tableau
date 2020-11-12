@@ -1,0 +1,1522 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook original-version='18.1' source-build='2020.3.1 (20203.20.0918.1727)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='weather' inline='true' name='federated.0ps830i1sdpg7p1f5ecyn1jlcq46' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='weather' name='textscan.0p8jrqc1vfck6c17ga3cl15b2hev'>
+            <connection class='textscan' directory='C:/Users/Alp/Desktop/Clarus/Tableau/Project 1' filename='weather.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0p8jrqc1vfck6c17ga3cl15b2hev' name='weather.csv' table='[weather#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='STATION' ordinal='0' />
+            <column datatype='date' name='DATE' ordinal='1' />
+            <column datatype='string' name='AWND' ordinal='2' />
+            <column datatype='integer' name='TAVG' ordinal='3' />
+            <column datatype='integer' name='TMAX' ordinal='4' />
+            <column datatype='integer' name='TMIN' ordinal='5' />
+            <column datatype='integer' name='WT01' ordinal='6' />
+            <column datatype='integer' name='WT02' ordinal='7' />
+            <column datatype='integer' name='WT03' ordinal='8' />
+            <column datatype='integer' name='WT04' ordinal='9' />
+            <column datatype='integer' name='WT05' ordinal='10' />
+            <column datatype='integer' name='WT06' ordinal='11' />
+            <column datatype='integer' name='WT07' ordinal='12' />
+            <column datatype='integer' name='WT08' ordinal='13' />
+            <column datatype='integer' name='WT09' ordinal='14' />
+            <column datatype='integer' name='WT10' ordinal='15' />
+            <column datatype='integer' name='WT11' ordinal='16' />
+            <column datatype='integer' name='WT13' ordinal='17' />
+            <column datatype='integer' name='WT14' ordinal='18' />
+            <column datatype='integer' name='WT15' ordinal='19' />
+            <column datatype='integer' name='WT16' ordinal='20' />
+            <column datatype='integer' name='WT17' ordinal='21' />
+            <column datatype='integer' name='WT18' ordinal='22' />
+            <column datatype='integer' name='WT19' ordinal='23' />
+            <column datatype='integer' name='WT21' ordinal='24' />
+            <column datatype='integer' name='WT22' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0p8jrqc1vfck6c17ga3cl15b2hev' name='weather.csv' table='[weather#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='STATION' ordinal='0' />
+            <column datatype='date' name='DATE' ordinal='1' />
+            <column datatype='string' name='AWND' ordinal='2' />
+            <column datatype='integer' name='TAVG' ordinal='3' />
+            <column datatype='integer' name='TMAX' ordinal='4' />
+            <column datatype='integer' name='TMIN' ordinal='5' />
+            <column datatype='integer' name='WT01' ordinal='6' />
+            <column datatype='integer' name='WT02' ordinal='7' />
+            <column datatype='integer' name='WT03' ordinal='8' />
+            <column datatype='integer' name='WT04' ordinal='9' />
+            <column datatype='integer' name='WT05' ordinal='10' />
+            <column datatype='integer' name='WT06' ordinal='11' />
+            <column datatype='integer' name='WT07' ordinal='12' />
+            <column datatype='integer' name='WT08' ordinal='13' />
+            <column datatype='integer' name='WT09' ordinal='14' />
+            <column datatype='integer' name='WT10' ordinal='15' />
+            <column datatype='integer' name='WT11' ordinal='16' />
+            <column datatype='integer' name='WT13' ordinal='17' />
+            <column datatype='integer' name='WT14' ordinal='18' />
+            <column datatype='integer' name='WT15' ordinal='19' />
+            <column datatype='integer' name='WT16' ordinal='20' />
+            <column datatype='integer' name='WT17' ordinal='21' />
+            <column datatype='integer' name='WT18' ordinal='22' />
+            <column datatype='integer' name='WT19' ordinal='23' />
+            <column datatype='integer' name='WT21' ordinal='24' />
+            <column datatype='integer' name='WT22' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATION]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>STATION</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DATE]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>DATE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AWND</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AWND]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>AWND</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TAVG]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>TAVG</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TMAX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TMAX]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>TMAX</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TMIN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TMIN]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>TMIN</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT01</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT01]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT01</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT02</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT02]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT02</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT03</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT03]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT03</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT04</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT04]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT04</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT05</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT05]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT05</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT06</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT06]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT06</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT07</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT07]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT07</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT08]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT08</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT09</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT09]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT09</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT10]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT10</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT11</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT11]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT11</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT13]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT13</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT14</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT14]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT14</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT15]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT15</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT16</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT16]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT16</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT17</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT17]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT17</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT18]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT18</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT19</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT19]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT19</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT21</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT21]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT21</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT22</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT22]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>WT22</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Awnd' datatype='string' name='[AWND]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Bad Conditions (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Calculation_2017894152968499203]' peg='0' size='1.424' />
+      </column>
+      <column caption='Bad Conditions' datatype='integer' name='[Calculation_2017894152968499203]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IFNULL([WT01], 0) + IFNULL([WT02], 0) + IFNULL([WT03], 0) + IFNULL([WT04], 0) + IFNULL([WT05], 0) + IFNULL([WT06], 0) + IFNULL([WT07], 0) + IFNULL([WT08], 0) + IFNULL([WT09], 0) + IFNULL([WT10], 0) + IFNULL([WT11], 0) + IFNULL([WT13], 0) + IFNULL([WT14], 0) + IFNULL([WT15], 0) + IFNULL([WT16], 0) + IFNULL([WT17], 0) + IFNULL([WT18], 0) + IFNULL([WT19], 0) + IFNULL([WT21], 0) + IFNULL([WT22], 0)' />
+      </column>
+      <column caption='Rating' datatype='string' name='[Calculation_2017894152970436612]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_2017894152968499203] = 0 THEN &apos;good&apos;&#13;&#10;ELSEIF [Calculation_2017894152968499203] &gt; 0 and [Calculation_2017894152968499203] &lt; 5 THEN &apos;bad&apos;&#13;&#10;ELSEIF [Calculation_2017894152968499203] &gt; 4 and [Calculation_2017894152968499203] &lt; 10 THEN &apos;worse&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Temperature Difference' datatype='integer' name='[Calculation_2507660612109930496]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[TMAX] - [TMIN]' />
+      </column>
+      <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+      <column caption='Station' datatype='string' name='[STATION]' role='dimension' type='nominal' />
+      <column caption='Tavg' datatype='integer' name='[TAVG]' role='measure' type='quantitative' />
+      <column caption='Tmax' datatype='integer' name='[TMAX]' role='measure' type='quantitative' />
+      <column caption='Tmin' datatype='integer' name='[TMIN]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Temperature Difference (bin)' datatype='integer' name='[Temperature Difference (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Calculation_2507660612109930496]' peg='0' size='5.94' />
+      </column>
+      <column caption='Wt01' datatype='integer' name='[WT01]' role='dimension' type='ordinal' />
+      <column caption='Wt02' datatype='integer' name='[WT02]' role='dimension' type='ordinal' />
+      <column caption='Wt03' datatype='integer' name='[WT03]' role='dimension' type='ordinal' />
+      <column caption='Wt04' datatype='integer' name='[WT04]' role='dimension' type='ordinal' />
+      <column caption='Wt05' datatype='integer' name='[WT05]' role='dimension' type='ordinal' />
+      <column caption='Wt06' datatype='integer' name='[WT06]' role='dimension' type='ordinal' />
+      <column caption='Wt07' datatype='integer' name='[WT07]' role='dimension' type='ordinal' />
+      <column caption='Wt08' datatype='integer' name='[WT08]' role='dimension' type='ordinal' />
+      <column caption='Wt09' datatype='integer' name='[WT09]' role='dimension' type='ordinal' />
+      <column caption='Wt10' datatype='integer' name='[WT10]' role='dimension' type='ordinal' />
+      <column caption='Wt11' datatype='integer' name='[WT11]' role='dimension' type='ordinal' />
+      <column caption='Wt13' datatype='integer' name='[WT13]' role='dimension' type='ordinal' />
+      <column caption='Wt14' datatype='integer' name='[WT14]' role='dimension' type='ordinal' />
+      <column caption='Wt15' datatype='integer' name='[WT15]' role='dimension' type='ordinal' />
+      <column caption='Wt16' datatype='integer' name='[WT16]' role='dimension' type='ordinal' />
+      <column caption='Wt17' datatype='integer' name='[WT17]' role='dimension' type='ordinal' />
+      <column caption='Wt18' datatype='integer' name='[WT18]' role='dimension' type='ordinal' />
+      <column caption='Wt19' datatype='integer' name='[WT19]' role='dimension' type='ordinal' />
+      <column caption='Wt21' datatype='integer' name='[WT21]' role='dimension' type='ordinal' />
+      <column caption='Wt22' datatype='integer' name='[WT22]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='weather.csv' datatype='table' name='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_2017894152970436612]' derivation='None' name='[none:Calculation_2017894152970436612:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_2017894152970436612:nk]' type='palette'>
+            <map to='#aec7e8'>
+              <bucket>&quot;good&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;bad&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;worse&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='weather.csv' id='weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83'>
+            <properties context=''>
+              <relation connection='textscan.0p8jrqc1vfck6c17ga3cl15b2hev' name='weather.csv' table='[weather#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='STATION' ordinal='0' />
+                  <column datatype='date' name='DATE' ordinal='1' />
+                  <column datatype='string' name='AWND' ordinal='2' />
+                  <column datatype='integer' name='TAVG' ordinal='3' />
+                  <column datatype='integer' name='TMAX' ordinal='4' />
+                  <column datatype='integer' name='TMIN' ordinal='5' />
+                  <column datatype='integer' name='WT01' ordinal='6' />
+                  <column datatype='integer' name='WT02' ordinal='7' />
+                  <column datatype='integer' name='WT03' ordinal='8' />
+                  <column datatype='integer' name='WT04' ordinal='9' />
+                  <column datatype='integer' name='WT05' ordinal='10' />
+                  <column datatype='integer' name='WT06' ordinal='11' />
+                  <column datatype='integer' name='WT07' ordinal='12' />
+                  <column datatype='integer' name='WT08' ordinal='13' />
+                  <column datatype='integer' name='WT09' ordinal='14' />
+                  <column datatype='integer' name='WT10' ordinal='15' />
+                  <column datatype='integer' name='WT11' ordinal='16' />
+                  <column datatype='integer' name='WT13' ordinal='17' />
+                  <column datatype='integer' name='WT14' ordinal='18' />
+                  <column datatype='integer' name='WT15' ordinal='19' />
+                  <column datatype='integer' name='WT16' ordinal='20' />
+                  <column datatype='integer' name='WT17' ordinal='21' />
+                  <column datatype='integer' name='WT18' ordinal='22' />
+                  <column datatype='integer' name='WT19' ordinal='23' />
+                  <column datatype='integer' name='WT21' ordinal='24' />
+                  <column datatype='integer' name='WT22' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='1- Create a box plot using TMIN, TAVG, TMAX.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0ps830i1sdpg7p1f5ecyn1jlcq46' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ps830i1sdpg7p1f5ecyn1jlcq46'>
+            <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+            <column caption='Tavg' datatype='integer' name='[TAVG]' role='measure' type='quantitative' />
+            <column caption='Tmax' datatype='integer' name='[TMAX]' role='measure' type='quantitative' />
+            <column caption='Tmin' datatype='integer' name='[TMIN]' role='measure' type='quantitative' />
+            <column-instance column='[TAVG]' derivation='Avg' name='[avg:TAVG:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TMAX]' derivation='Avg' name='[avg:TMAX:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TMIN]' derivation='Avg' name='[avg:TMIN:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DATE]' derivation='Year' name='[yr:DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[yr:DATE:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TAVG:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TAVG:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TMAX:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TMAX:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TMIN:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TMIN:qk]' z-order='3' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TAVG:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[yr:DATE:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TMAX:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[yr:DATE:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TMIN:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[yr:DATE:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TAVG:qk] + ([federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TMAX:qk] + [federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[avg:TMIN:qk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{8213B99F-759B-4260-91D4-E9761F2683F9}' />
+    </worksheet>
+    <worksheet name='2- Create a temperature difference histogram.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0ps830i1sdpg7p1f5ecyn1jlcq46' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ps830i1sdpg7p1f5ecyn1jlcq46'>
+            <column caption='Temperature Difference' datatype='integer' name='[Calculation_2507660612109930496]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[TMAX] - [TMIN]' />
+            </column>
+            <column caption='Tmax' datatype='integer' name='[TMAX]' role='measure' type='quantitative' />
+            <column caption='Tmin' datatype='integer' name='[TMIN]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Temperature Difference (bin)' datatype='integer' name='[Temperature Difference (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[Calculation_2507660612109930496]' peg='0' size='5.94' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='weather.csv' datatype='integer' name='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='weather.csv' datatype='table' name='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' role='measure' type='quantitative' />
+            <column-instance column='[Temperature Difference (bin)]' derivation='None' name='[none:Temperature Difference (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#16b8f2' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[__tableau_internal_object_id__].[cnt:weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83:qk]</rows>
+        <cols>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Temperature Difference (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[Temperature Difference (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{1B390491-F56B-4218-A12C-AF338563C448}' />
+    </worksheet>
+    <worksheet name='3 - Create a calculated column named Bad Conditions that calculates the values within WT01 to WT22.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0ps830i1sdpg7p1f5ecyn1jlcq46' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ps830i1sdpg7p1f5ecyn1jlcq46'>
+            <column datatype='integer' name='[Bad Conditions (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Calculation_2017894152968499203]' peg='0' size='1.424' />
+            </column>
+            <column caption='Bad Conditions' datatype='integer' name='[Calculation_2017894152968499203]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IFNULL([WT01], 0) + IFNULL([WT02], 0) + IFNULL([WT03], 0) + IFNULL([WT04], 0) + IFNULL([WT05], 0) + IFNULL([WT06], 0) + IFNULL([WT07], 0) + IFNULL([WT08], 0) + IFNULL([WT09], 0) + IFNULL([WT10], 0) + IFNULL([WT11], 0) + IFNULL([WT13], 0) + IFNULL([WT14], 0) + IFNULL([WT15], 0) + IFNULL([WT16], 0) + IFNULL([WT17], 0) + IFNULL([WT18], 0) + IFNULL([WT19], 0) + IFNULL([WT21], 0) + IFNULL([WT22], 0)' />
+            </column>
+            <column caption='Wt01' datatype='integer' name='[WT01]' role='dimension' type='ordinal' />
+            <column caption='Wt02' datatype='integer' name='[WT02]' role='dimension' type='ordinal' />
+            <column caption='Wt03' datatype='integer' name='[WT03]' role='dimension' type='ordinal' />
+            <column caption='Wt04' datatype='integer' name='[WT04]' role='dimension' type='ordinal' />
+            <column caption='Wt05' datatype='integer' name='[WT05]' role='dimension' type='ordinal' />
+            <column caption='Wt06' datatype='integer' name='[WT06]' role='dimension' type='ordinal' />
+            <column caption='Wt07' datatype='integer' name='[WT07]' role='dimension' type='ordinal' />
+            <column caption='Wt08' datatype='integer' name='[WT08]' role='dimension' type='ordinal' />
+            <column caption='Wt09' datatype='integer' name='[WT09]' role='dimension' type='ordinal' />
+            <column caption='Wt10' datatype='integer' name='[WT10]' role='dimension' type='ordinal' />
+            <column caption='Wt11' datatype='integer' name='[WT11]' role='dimension' type='ordinal' />
+            <column caption='Wt13' datatype='integer' name='[WT13]' role='dimension' type='ordinal' />
+            <column caption='Wt14' datatype='integer' name='[WT14]' role='dimension' type='ordinal' />
+            <column caption='Wt15' datatype='integer' name='[WT15]' role='dimension' type='ordinal' />
+            <column caption='Wt16' datatype='integer' name='[WT16]' role='dimension' type='ordinal' />
+            <column caption='Wt17' datatype='integer' name='[WT17]' role='dimension' type='ordinal' />
+            <column caption='Wt18' datatype='integer' name='[WT18]' role='dimension' type='ordinal' />
+            <column caption='Wt19' datatype='integer' name='[WT19]' role='dimension' type='ordinal' />
+            <column caption='Wt21' datatype='integer' name='[WT21]' role='dimension' type='ordinal' />
+            <column caption='Wt22' datatype='integer' name='[WT22]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2017894152968499203]' derivation='Count' name='[cnt:Calculation_2017894152968499203:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Bad Conditions (bin)]' derivation='None' name='[none:Bad Conditions (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-color' value='#16b8f2' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='846' />
+                <format attr='maxwidth' value='846' />
+                <format attr='minheight' value='650' />
+                <format attr='maxheight' value='650' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[cnt:Calculation_2017894152968499203:qk]</rows>
+        <cols>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Bad Conditions (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[Bad Conditions (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{728E2752-B33A-416D-9903-CD0C0CE9A944}' />
+    </worksheet>
+    <worksheet name='4 - Create a calculated column named Rating that maps the rating. Then create a view that displays rating’s distribution.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0ps830i1sdpg7p1f5ecyn1jlcq46' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ps830i1sdpg7p1f5ecyn1jlcq46'>
+            <column caption='Bad Conditions' datatype='integer' name='[Calculation_2017894152968499203]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IFNULL([WT01], 0) + IFNULL([WT02], 0) + IFNULL([WT03], 0) + IFNULL([WT04], 0) + IFNULL([WT05], 0) + IFNULL([WT06], 0) + IFNULL([WT07], 0) + IFNULL([WT08], 0) + IFNULL([WT09], 0) + IFNULL([WT10], 0) + IFNULL([WT11], 0) + IFNULL([WT13], 0) + IFNULL([WT14], 0) + IFNULL([WT15], 0) + IFNULL([WT16], 0) + IFNULL([WT17], 0) + IFNULL([WT18], 0) + IFNULL([WT19], 0) + IFNULL([WT21], 0) + IFNULL([WT22], 0)' />
+            </column>
+            <column caption='Rating' datatype='string' name='[Calculation_2017894152970436612]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_2017894152968499203] = 0 THEN &apos;good&apos;&#13;&#10;ELSEIF [Calculation_2017894152968499203] &gt; 0 and [Calculation_2017894152968499203] &lt; 5 THEN &apos;bad&apos;&#13;&#10;ELSEIF [Calculation_2017894152968499203] &gt; 4 and [Calculation_2017894152968499203] &lt; 10 THEN &apos;worse&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Wt01' datatype='integer' name='[WT01]' role='dimension' type='ordinal' />
+            <column caption='Wt02' datatype='integer' name='[WT02]' role='dimension' type='ordinal' />
+            <column caption='Wt03' datatype='integer' name='[WT03]' role='dimension' type='ordinal' />
+            <column caption='Wt04' datatype='integer' name='[WT04]' role='dimension' type='ordinal' />
+            <column caption='Wt05' datatype='integer' name='[WT05]' role='dimension' type='ordinal' />
+            <column caption='Wt06' datatype='integer' name='[WT06]' role='dimension' type='ordinal' />
+            <column caption='Wt07' datatype='integer' name='[WT07]' role='dimension' type='ordinal' />
+            <column caption='Wt08' datatype='integer' name='[WT08]' role='dimension' type='ordinal' />
+            <column caption='Wt09' datatype='integer' name='[WT09]' role='dimension' type='ordinal' />
+            <column caption='Wt10' datatype='integer' name='[WT10]' role='dimension' type='ordinal' />
+            <column caption='Wt11' datatype='integer' name='[WT11]' role='dimension' type='ordinal' />
+            <column caption='Wt13' datatype='integer' name='[WT13]' role='dimension' type='ordinal' />
+            <column caption='Wt14' datatype='integer' name='[WT14]' role='dimension' type='ordinal' />
+            <column caption='Wt15' datatype='integer' name='[WT15]' role='dimension' type='ordinal' />
+            <column caption='Wt16' datatype='integer' name='[WT16]' role='dimension' type='ordinal' />
+            <column caption='Wt17' datatype='integer' name='[WT17]' role='dimension' type='ordinal' />
+            <column caption='Wt18' datatype='integer' name='[WT18]' role='dimension' type='ordinal' />
+            <column caption='Wt19' datatype='integer' name='[WT19]' role='dimension' type='ordinal' />
+            <column caption='Wt21' datatype='integer' name='[WT21]' role='dimension' type='ordinal' />
+            <column caption='Wt22' datatype='integer' name='[WT22]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='weather.csv' datatype='integer' name='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='weather.csv' datatype='table' name='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2017894152970436612]' derivation='None' name='[none:Calculation_2017894152970436612:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Calculation_2017894152970436612:nk]' />
+              <wedge-size column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[__tableau_internal_object_id__].[cnt:weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-size' value='15' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B92E2382-9BBF-4A0A-A381-69CF9BB8D22C}' />
+    </worksheet>
+    <worksheet name='A second view that displays rating’s distribution.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0ps830i1sdpg7p1f5ecyn1jlcq46' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ps830i1sdpg7p1f5ecyn1jlcq46'>
+            <column caption='Bad Conditions' datatype='integer' name='[Calculation_2017894152968499203]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IFNULL([WT01], 0) + IFNULL([WT02], 0) + IFNULL([WT03], 0) + IFNULL([WT04], 0) + IFNULL([WT05], 0) + IFNULL([WT06], 0) + IFNULL([WT07], 0) + IFNULL([WT08], 0) + IFNULL([WT09], 0) + IFNULL([WT10], 0) + IFNULL([WT11], 0) + IFNULL([WT13], 0) + IFNULL([WT14], 0) + IFNULL([WT15], 0) + IFNULL([WT16], 0) + IFNULL([WT17], 0) + IFNULL([WT18], 0) + IFNULL([WT19], 0) + IFNULL([WT21], 0) + IFNULL([WT22], 0)' />
+            </column>
+            <column caption='Rating' datatype='string' name='[Calculation_2017894152970436612]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_2017894152968499203] = 0 THEN &apos;good&apos;&#13;&#10;ELSEIF [Calculation_2017894152968499203] &gt; 0 and [Calculation_2017894152968499203] &lt; 5 THEN &apos;bad&apos;&#13;&#10;ELSEIF [Calculation_2017894152968499203] &gt; 4 and [Calculation_2017894152968499203] &lt; 10 THEN &apos;worse&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Wt01' datatype='integer' name='[WT01]' role='dimension' type='ordinal' />
+            <column caption='Wt02' datatype='integer' name='[WT02]' role='dimension' type='ordinal' />
+            <column caption='Wt03' datatype='integer' name='[WT03]' role='dimension' type='ordinal' />
+            <column caption='Wt04' datatype='integer' name='[WT04]' role='dimension' type='ordinal' />
+            <column caption='Wt05' datatype='integer' name='[WT05]' role='dimension' type='ordinal' />
+            <column caption='Wt06' datatype='integer' name='[WT06]' role='dimension' type='ordinal' />
+            <column caption='Wt07' datatype='integer' name='[WT07]' role='dimension' type='ordinal' />
+            <column caption='Wt08' datatype='integer' name='[WT08]' role='dimension' type='ordinal' />
+            <column caption='Wt09' datatype='integer' name='[WT09]' role='dimension' type='ordinal' />
+            <column caption='Wt10' datatype='integer' name='[WT10]' role='dimension' type='ordinal' />
+            <column caption='Wt11' datatype='integer' name='[WT11]' role='dimension' type='ordinal' />
+            <column caption='Wt13' datatype='integer' name='[WT13]' role='dimension' type='ordinal' />
+            <column caption='Wt14' datatype='integer' name='[WT14]' role='dimension' type='ordinal' />
+            <column caption='Wt15' datatype='integer' name='[WT15]' role='dimension' type='ordinal' />
+            <column caption='Wt16' datatype='integer' name='[WT16]' role='dimension' type='ordinal' />
+            <column caption='Wt17' datatype='integer' name='[WT17]' role='dimension' type='ordinal' />
+            <column caption='Wt18' datatype='integer' name='[WT18]' role='dimension' type='ordinal' />
+            <column caption='Wt19' datatype='integer' name='[WT19]' role='dimension' type='ordinal' />
+            <column caption='Wt21' datatype='integer' name='[WT21]' role='dimension' type='ordinal' />
+            <column caption='Wt22' datatype='integer' name='[WT22]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='weather.csv' datatype='integer' name='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='weather.csv' datatype='table' name='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2017894152970436612]' derivation='None' name='[none:Calculation_2017894152970436612:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Calculation_2017894152970436612:nk]' value='255' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Calculation_2017894152970436612:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[__tableau_internal_object_id__].[cnt:weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83:qk]</rows>
+        <cols>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Calculation_2017894152970436612:nk]</cols>
+      </table>
+      <simple-id uuid='{25DA40FB-8A57-4332-A3BC-F5EF44EDB6CF}' />
+    </worksheet>
+    <worksheet name='Number of records in the dataset.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0ps830i1sdpg7p1f5ecyn1jlcq46' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ps830i1sdpg7p1f5ecyn1jlcq46'>
+            <_.fcp.ObjectModelTableType.false...column caption='weather.csv' datatype='integer' name='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='weather.csv' datatype='table' name='[__tableau_internal_object_id__].[weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[__tableau_internal_object_id__].[cnt:weather.csv_D93B6BDA98CD4AAF91E7853072C2EA83:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{905B61B0-1E30-470C-B83B-90194383A691}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Number of records in the dataset.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CA9FDDB1-B0C4-4B75-B2AD-B27D53E4F21B}' />
+    </window>
+    <window class='worksheet' name='1- Create a box plot using TMIN, TAVG, TMAX.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:TAVG:nk]</field>
+            <field>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[yr:DATE:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{070A1B45-39FD-4314-BC9C-C93B463E5ED9}' />
+    </window>
+    <window class='worksheet' name='2- Create a temperature difference histogram.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Temperature Difference (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A7C81D7F-28D9-4A42-8572-2E42C9E535E4}' />
+    </window>
+    <window class='worksheet' name='3 - Create a calculated column named Bad Conditions that calculates the values within WT01 to WT22.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{385865DF-9244-4CD5-B160-1E789A620915}' />
+    </window>
+    <window class='worksheet' name='4 - Create a calculated column named Rating that maps the rating. Then create a view that displays rating’s distribution.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Calculation_2017894152970436612:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Calculation_2017894152970436612:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BA0A82AB-BB05-44F0-863C-A097F50418D3}' />
+    </window>
+    <window class='worksheet' maximized='true' name='A second view that displays rating’s distribution.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Calculation_2017894152970436612:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ps830i1sdpg7p1f5ecyn1jlcq46].[none:Calculation_2017894152970436612:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{527E44CF-3211-4ACE-9C8A-D935DA26E948}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='1- Create a box plot using TMIN, TAVG, TMAX.' width='123'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='2- Create a temperature difference histogram.' width='192'>
+      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
+      ee5hnQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='3 - Create a calculated column named Bad Conditions that calculates the values within WT01 to WT22.' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='4 - Create a calculated column named Rating that maps the rating. Then create a view that displays rating’s distribution.' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='A second view that displays rating’s distribution.' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='25' name='Number of records in the dataset.' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAC3UlEQVRYhe1YMUvrUBg9htZKbXVrJt3EPxBCHbN1kEC6OBbBQeggQnWvoKKDTk46dC60
+      XfoHsrXSpThIHVpwENKl0ka9zeXme8ODQmj1xfeIGV7PeHK+754cvntvyAIREf5jSGEbCBvz
+      AMI2EDbmAYRtIGzMAwjbQNiYBxC2gbAxDyBsA2FjHkDYBsLGjwTQ7XaRy+WgqipUVUUul0O3
+      2/2yptFoIJvNQlEUZLNZNBoNz3PXdVGv12EYBlRVxdbWFo6OjvD6+votDShg9Ho9MgyDqtUq
+      OY5DjuNQtVolwzCo1+t9WqfrOjWbTRJCULPZJF3X6eHhYfL84uKC8vk8dTodEkLQ29sbXV1d
+      UaFQIM65b03gAdRqNSoWiySEmHBCCCoWi1Sr1WbWCCGoUql4uEqlQicnJ5M+T09Pnp5ERJZl
+      0e7uLlmW5VsT+BaIx+NgjE3xjDHE4/GZNaPRCIqieDhFUWBZFkajEQBgY2MDkuS1b9s2lpaW
+      EIvFfGsCDyCdTmMwGKBcLoNzDs45yuUyBoMB0un0zJrxeIxEIuHhEokEXNfFeDyeWdPv93F+
+      fo7t7W2srq761kT+4d18YTgcgnMOWZYnnCzL4JxjOBxiZWXlr3szxnB9fY3Hx0ecnp7i9vb2
+      25rAJ6BUKiGTyUDTNESjUUSjUWiahkwmg1KpNLMmFovBtm0PZ9s2JEmajK7jODg7O8Py8jLu
+      7u6wtrY21cePJvAAGGOIRKYHLRKJzDwbACCZTKLVanm4VqsFWZaRTCYBAPV6HQCwv7+PxcXF
+      mX38aAK/BUzTJF3XyTRNEkKQEMLDfYavrkHGGBUKBWq325/W+9EQES0QBftb3HVd3N/f4+bm
+      Bp1OBwCwubmJfD4PVVUhSRI+Pj5weHgITdOws7MD4PeH0OXlJZ6fn7G+vo7j4+PJodnv97G3
+      t4eXl5ep9VKp1GRr/UmTSqWCnwA/ME2TDg4O6P39/cfX/gWEVKJFbCIf7gAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

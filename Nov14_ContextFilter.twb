@@ -1,0 +1,1283 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook original-version='18.1' source-build='2020.3.1 (20203.20.0918.1727)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Orders (Sample - Superstore)' inline='true' name='federated.08qoawc1mpg0ex149oxdd184zsoe' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sample - Superstore' name='excel-direct.1qs99gx0qa7hin18vctx813y9ghq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Alp/Desktop/Clarus/Tableau/Sample - Superstore.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1qs99gx0qa7hin18vctx813y9ghq' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country/Region' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1qs99gx0qa7hin18vctx813y9ghq' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country/Region' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U9995:no:A1:U9995:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Row ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country/Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country/Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Country/Region</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_4A08EA9A4B8E45A693D7118AEEF41157]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country/Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='integer' name='[Row ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Orders' datatype='table' name='[__tableau_internal_object_id__].[Orders_4A08EA9A4B8E45A693D7118AEEF41157]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Orders' id='Orders_4A08EA9A4B8E45A693D7118AEEF41157'>
+            <properties context=''>
+              <relation connection='excel-direct.1qs99gx0qa7hin18vctx813y9ghq' name='Orders' table='[Orders$]' type='table'>
+                <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Row ID' ordinal='0' />
+                  <column datatype='string' name='Order ID' ordinal='1' />
+                  <column datatype='date' name='Order Date' ordinal='2' />
+                  <column datatype='date' name='Ship Date' ordinal='3' />
+                  <column datatype='string' name='Ship Mode' ordinal='4' />
+                  <column datatype='string' name='Customer ID' ordinal='5' />
+                  <column datatype='string' name='Customer Name' ordinal='6' />
+                  <column datatype='string' name='Segment' ordinal='7' />
+                  <column datatype='string' name='Country/Region' ordinal='8' />
+                  <column datatype='string' name='City' ordinal='9' />
+                  <column datatype='string' name='State' ordinal='10' />
+                  <column datatype='integer' name='Postal Code' ordinal='11' />
+                  <column datatype='string' name='Region' ordinal='12' />
+                  <column datatype='string' name='Product ID' ordinal='13' />
+                  <column datatype='string' name='Category' ordinal='14' />
+                  <column datatype='string' name='Sub-Category' ordinal='15' />
+                  <column datatype='string' name='Product Name' ordinal='16' />
+                  <column datatype='real' name='Sales' ordinal='17' />
+                  <column datatype='integer' name='Quantity' ordinal='18' />
+                  <column datatype='real' name='Discount' ordinal='19' />
+                  <column datatype='real' name='Profit' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Context Filter - 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore)' name='federated.08qoawc1mpg0ex149oxdd184zsoe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08qoawc1mpg0ex149oxdd184zsoe'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:City:nk]' context='true'>
+            <groupfilter function='member' level='[none:City:nk]' member='&quot;New York City&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Customer Name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Sales])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Customer Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Customer Name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Tom Ashbrook&quot;</bucket>
+              <bucket>&quot;Peter Fuller&quot;</bucket>
+              <bucket>&quot;Seth Vernon&quot;</bucket>
+              <bucket>&quot;Tom Boeckenhauer&quot;</bucket>
+              <bucket>&quot;Todd Sumrall&quot;</bucket>
+              <bucket>&quot;Keith Dawkins&quot;</bucket>
+              <bucket>&quot;Caroline Jumper&quot;</bucket>
+              <bucket>&quot;Nathan Mautz&quot;</bucket>
+              <bucket>&quot;Pete Kriz&quot;</bucket>
+              <bucket>&quot;Adam Bellavance&quot;</bucket>
+              <bucket>&quot;Darrin Martin&quot;</bucket>
+              <bucket>&quot;Luke Weiss&quot;</bucket>
+              <bucket>&quot;Corinna Mitchell&quot;</bucket>
+              <bucket>&quot;Steven Roelle&quot;</bucket>
+              <bucket>&quot;Mitch Webber&quot;</bucket>
+              <bucket>&quot;Rick Hansen&quot;</bucket>
+              <bucket>&quot;Christine Phan&quot;</bucket>
+              <bucket>&quot;Naresj Patel&quot;</bucket>
+              <bucket>&quot;Natalie Webber&quot;</bucket>
+              <bucket>&quot;Lena Creighton&quot;</bucket>
+              <bucket>&quot;Doug Jacobs&quot;</bucket>
+              <bucket>&quot;Speros Goranitis&quot;</bucket>
+              <bucket>&quot;Emily Ducich&quot;</bucket>
+              <bucket>&quot;Joe Elijah&quot;</bucket>
+              <bucket>&quot;Justin Deggeller&quot;</bucket>
+              <bucket>&quot;Dean percer&quot;</bucket>
+              <bucket>&quot;Ann Chong&quot;</bucket>
+              <bucket>&quot;Valerie Dominguez&quot;</bucket>
+              <bucket>&quot;Maribeth Schnelling&quot;</bucket>
+              <bucket>&quot;Edward Nazzal&quot;</bucket>
+              <bucket>&quot;Deirdre Greer&quot;</bucket>
+              <bucket>&quot;Natalie DeCherney&quot;</bucket>
+              <bucket>&quot;Craig Carroll&quot;</bucket>
+              <bucket>&quot;Nora Preis&quot;</bucket>
+              <bucket>&quot;Roger Barcio&quot;</bucket>
+              <bucket>&quot;Mark Packer&quot;</bucket>
+              <bucket>&quot;Suzanne McNair&quot;</bucket>
+              <bucket>&quot;Lisa DeCherney&quot;</bucket>
+              <bucket>&quot;Carlos Daly&quot;</bucket>
+              <bucket>&quot;Katharine Harms&quot;</bucket>
+              <bucket>&quot;Dave Hallsten&quot;</bucket>
+              <bucket>&quot;Darren Budd&quot;</bucket>
+              <bucket>&quot;Jonathan Doherty&quot;</bucket>
+              <bucket>&quot;Pauline Webber&quot;</bucket>
+              <bucket>&quot;Mike Pelletier&quot;</bucket>
+              <bucket>&quot;Frank Preis&quot;</bucket>
+              <bucket>&quot;Frank Hawley&quot;</bucket>
+              <bucket>&quot;Harold Pawlan&quot;</bucket>
+              <bucket>&quot;Jim Karlsson&quot;</bucket>
+              <bucket>&quot;Adam Shillingsburg&quot;</bucket>
+              <bucket>&quot;Victoria Wilson&quot;</bucket>
+              <bucket>&quot;Dan Reichenbach&quot;</bucket>
+              <bucket>&quot;Sheri Gordon&quot;</bucket>
+              <bucket>&quot;Patrick Gardner&quot;</bucket>
+              <bucket>&quot;Michael Nguyen&quot;</bucket>
+              <bucket>&quot;Jennifer Patt&quot;</bucket>
+              <bucket>&quot;Logan Currie&quot;</bucket>
+              <bucket>&quot;Don Miller&quot;</bucket>
+              <bucket>&quot;David Philippe&quot;</bucket>
+              <bucket>&quot;Janet Molinari&quot;</bucket>
+              <bucket>&quot;Barry Französisch&quot;</bucket>
+              <bucket>&quot;Matt Abelman&quot;</bucket>
+              <bucket>&quot;Dean Katz&quot;</bucket>
+              <bucket>&quot;Michael Moore&quot;</bucket>
+              <bucket>&quot;Luke Foster&quot;</bucket>
+              <bucket>&quot;Julie Kriz&quot;</bucket>
+              <bucket>&quot;Trudy Brown&quot;</bucket>
+              <bucket>&quot;Jessica Myrick&quot;</bucket>
+              <bucket>&quot;Sarah Bern&quot;</bucket>
+              <bucket>&quot;Katherine Ducich&quot;</bucket>
+              <bucket>&quot;Bradley Nguyen&quot;</bucket>
+              <bucket>&quot;Scott Cohen&quot;</bucket>
+              <bucket>&quot;Scott Williamson&quot;</bucket>
+              <bucket>&quot;Craig Reiter&quot;</bucket>
+              <bucket>&quot;Victor Preis&quot;</bucket>
+              <bucket>&quot;Kalyca Meade&quot;</bucket>
+              <bucket>&quot;Bill Shonely&quot;</bucket>
+              <bucket>&quot;Delfina Latchford&quot;</bucket>
+              <bucket>&quot;Greg Matthias&quot;</bucket>
+              <bucket>&quot;Adam Hart&quot;</bucket>
+              <bucket>&quot;Michael Paige&quot;</bucket>
+              <bucket>&quot;Alan Hwang&quot;</bucket>
+              <bucket>&quot;Chad McGuire&quot;</bucket>
+              <bucket>&quot;Christina DeMoss&quot;</bucket>
+              <bucket>&quot;Harold Ryan&quot;</bucket>
+              <bucket>&quot;Thomas Brumley&quot;</bucket>
+              <bucket>&quot;Laurel Workman&quot;</bucket>
+              <bucket>&quot;Bryan Spruell&quot;</bucket>
+              <bucket>&quot;Michelle Moray&quot;</bucket>
+              <bucket>&quot;Mary O&apos;Rourke&quot;</bucket>
+              <bucket>&quot;Chuck Clark&quot;</bucket>
+              <bucket>&quot;Sibella Parks&quot;</bucket>
+              <bucket>&quot;Helen Abelman&quot;</bucket>
+              <bucket>&quot;Toby Braunhardt&quot;</bucket>
+              <bucket>&quot;John Grady&quot;</bucket>
+              <bucket>&quot;Janet Lee&quot;</bucket>
+              <bucket>&quot;Katrina Bavinger&quot;</bucket>
+              <bucket>&quot;Cyra Reiten&quot;</bucket>
+              <bucket>&quot;Katrina Edelman&quot;</bucket>
+              <bucket>&quot;Philisse Overcash&quot;</bucket>
+              <bucket>&quot;Steven Ward&quot;</bucket>
+              <bucket>&quot;Dorris liebe&quot;</bucket>
+              <bucket>&quot;Tim Brockman&quot;</bucket>
+              <bucket>&quot;Andy Gerbode&quot;</bucket>
+              <bucket>&quot;Harry Marie&quot;</bucket>
+              <bucket>&quot;Kunst Miller&quot;</bucket>
+              <bucket>&quot;Ken Brennan&quot;</bucket>
+              <bucket>&quot;Kelly Andreada&quot;</bucket>
+              <bucket>&quot;Irene Maddox&quot;</bucket>
+              <bucket>&quot;Resi Pölking&quot;</bucket>
+              <bucket>&quot;Becky Martin&quot;</bucket>
+              <bucket>&quot;Jennifer Jackson&quot;</bucket>
+              <bucket>&quot;Emily Burns&quot;</bucket>
+              <bucket>&quot;Bill Stewart&quot;</bucket>
+              <bucket>&quot;Chris Cortes&quot;</bucket>
+              <bucket>&quot;Evan Henry&quot;</bucket>
+              <bucket>&quot;Jay Kimmel&quot;</bucket>
+              <bucket>&quot;Amy Hunt&quot;</bucket>
+              <bucket>&quot;Katrina Willman&quot;</bucket>
+              <bucket>&quot;Emily Phan&quot;</bucket>
+              <bucket>&quot;Tanja Norvell&quot;</bucket>
+              <bucket>&quot;Greg Tran&quot;</bucket>
+              <bucket>&quot;Maribeth Yedwab&quot;</bucket>
+              <bucket>&quot;Jamie Frazer&quot;</bucket>
+              <bucket>&quot;James Galang&quot;</bucket>
+              <bucket>&quot;Edward Hooks&quot;</bucket>
+              <bucket>&quot;Gary McGarr&quot;</bucket>
+              <bucket>&quot;Sanjit Engle&quot;</bucket>
+              <bucket>&quot;Ben Wallace&quot;</bucket>
+              <bucket>&quot;Katherine Nockton&quot;</bucket>
+              <bucket>&quot;Brian Moss&quot;</bucket>
+              <bucket>&quot;Janet Martin&quot;</bucket>
+              <bucket>&quot;Denny Blanton&quot;</bucket>
+              <bucket>&quot;Edward Becker&quot;</bucket>
+              <bucket>&quot;Paul Gonzalez&quot;</bucket>
+              <bucket>&quot;Stefania Perrino&quot;</bucket>
+              <bucket>&quot;Patrick O&apos;Donnell&quot;</bucket>
+              <bucket>&quot;Mark Van Huff&quot;</bucket>
+              <bucket>&quot;Ralph Arnett&quot;</bucket>
+              <bucket>&quot;Craig Leslie&quot;</bucket>
+              <bucket>&quot;George Ashbrook&quot;</bucket>
+              <bucket>&quot;Mathew Reese&quot;</bucket>
+              <bucket>&quot;Maria Bertelson&quot;</bucket>
+              <bucket>&quot;Jeremy Lonsdale&quot;</bucket>
+              <bucket>&quot;Bobby Trafton&quot;</bucket>
+              <bucket>&quot;Jim Kriz&quot;</bucket>
+              <bucket>&quot;Dennis Bolton&quot;</bucket>
+              <bucket>&quot;Brian Derr&quot;</bucket>
+              <bucket>&quot;Jill Fjeld&quot;</bucket>
+              <bucket>&quot;Annie Zypern&quot;</bucket>
+              <bucket>&quot;Sarah Brown&quot;</bucket>
+              <bucket>&quot;Darrin Sayre&quot;</bucket>
+              <bucket>&quot;Susan Vittorini&quot;</bucket>
+              <bucket>&quot;Bryan Davis&quot;</bucket>
+              <bucket>&quot;Lena Hernandez&quot;</bucket>
+              <bucket>&quot;Dennis Kane&quot;</bucket>
+              <bucket>&quot;Ken Lonsdale&quot;</bucket>
+              <bucket>&quot;Harry Greene&quot;</bucket>
+              <bucket>&quot;David Kendrick&quot;</bucket>
+              <bucket>&quot;Annie Thurman&quot;</bucket>
+              <bucket>&quot;Anthony Rawles&quot;</bucket>
+              <bucket>&quot;Denny Ordway&quot;</bucket>
+              <bucket>&quot;Helen Wasserman&quot;</bucket>
+              <bucket>&quot;Mary Zewe&quot;</bucket>
+              <bucket>&quot;Brendan Sweed&quot;</bucket>
+              <bucket>&quot;Lindsay Shagiari&quot;</bucket>
+              <bucket>&quot;Bart Watters&quot;</bucket>
+              <bucket>&quot;Meg Tillman&quot;</bucket>
+              <bucket>&quot;Erica Hackney&quot;</bucket>
+              <bucket>&quot;Justin Hirsh&quot;</bucket>
+              <bucket>&quot;Bart Pistole&quot;</bucket>
+              <bucket>&quot;Carol Darley&quot;</bucket>
+              <bucket>&quot;Eleni McCrary&quot;</bucket>
+              <bucket>&quot;Anne Pryor&quot;</bucket>
+              <bucket>&quot;Tamara Willingham&quot;</bucket>
+              <bucket>&quot;Nat Gilpin&quot;</bucket>
+              <bucket>&quot;Giulietta Weimer&quot;</bucket>
+              <bucket>&quot;Cyma Kinney&quot;</bucket>
+              <bucket>&quot;Craig Carreira&quot;</bucket>
+              <bucket>&quot;Tracy Hopkins&quot;</bucket>
+              <bucket>&quot;Christine Sundaresam&quot;</bucket>
+              <bucket>&quot;Cynthia Voltz&quot;</bucket>
+              <bucket>&quot;Sally Knutson&quot;</bucket>
+              <bucket>&quot;Maya Herman&quot;</bucket>
+              <bucket>&quot;Steven Cartwright&quot;</bucket>
+              <bucket>&quot;Erica Smith&quot;</bucket>
+              <bucket>&quot;Chuck Sachs&quot;</bucket>
+              <bucket>&quot;Phillina Ober&quot;</bucket>
+              <bucket>&quot;Christopher Conant&quot;</bucket>
+              <bucket>&quot;Bradley Talbott&quot;</bucket>
+              <bucket>&quot;Ellis Ballard&quot;</bucket>
+              <bucket>&quot;David Flashing&quot;</bucket>
+              <bucket>&quot;Nicole Fjeld&quot;</bucket>
+              <bucket>&quot;Michael Grace&quot;</bucket>
+              <bucket>&quot;John Lucas&quot;</bucket>
+              <bucket>&quot;Shahid Hopkins&quot;</bucket>
+              <bucket>&quot;Jeremy Farry&quot;</bucket>
+              <bucket>&quot;Allen Rosenblatt&quot;</bucket>
+              <bucket>&quot;Victoria Pisteka&quot;</bucket>
+              <bucket>&quot;Giulietta Baptist&quot;</bucket>
+              <bucket>&quot;Tracy Blumstein&quot;</bucket>
+              <bucket>&quot;Dan Lawera&quot;</bucket>
+              <bucket>&quot;Neoma Murray&quot;</bucket>
+              <bucket>&quot;Frank Gastineau&quot;</bucket>
+              <bucket>&quot;Sam Zeldin&quot;</bucket>
+              <bucket>&quot;Erin Mull&quot;</bucket>
+              <bucket>&quot;Paul Prost&quot;</bucket>
+              <bucket>&quot;Berenike Kampe&quot;</bucket>
+              <bucket>&quot;Parhena Norris&quot;</bucket>
+              <bucket>&quot;Astrea Jones&quot;</bucket>
+              <bucket>&quot;Monica Federle&quot;</bucket>
+              <bucket>&quot;Stephanie Phelps&quot;</bucket>
+              <bucket>&quot;Allen Armold&quot;</bucket>
+              <bucket>&quot;Christina VanderZanden&quot;</bucket>
+              <bucket>&quot;Christy Brittain&quot;</bucket>
+              <bucket>&quot;Pauline Johnson&quot;</bucket>
+              <bucket>&quot;Ken Dana&quot;</bucket>
+              <bucket>&quot;Becky Castell&quot;</bucket>
+              <bucket>&quot;Sally Matthias&quot;</bucket>
+              <bucket>&quot;Nona Balk&quot;</bucket>
+              <bucket>&quot;Jim Sink&quot;</bucket>
+              <bucket>&quot;Shui Tom&quot;</bucket>
+              <bucket>&quot;Brendan Murry&quot;</bucket>
+              <bucket>&quot;Toby Gnade&quot;</bucket>
+              <bucket>&quot;Stephanie Ulpright&quot;</bucket>
+              <bucket>&quot;Erin Ashbrook&quot;</bucket>
+              <bucket>&quot;Jennifer Ferguson&quot;</bucket>
+              <bucket>&quot;Patrick Jones&quot;</bucket>
+              <bucket>&quot;Cathy Armstrong&quot;</bucket>
+              <bucket>&quot;Joy Daniels&quot;</bucket>
+              <bucket>&quot;Mark Cousins&quot;</bucket>
+              <bucket>&quot;Cathy Prescott&quot;</bucket>
+              <bucket>&quot;Denise Monton&quot;</bucket>
+              <bucket>&quot;William Brown&quot;</bucket>
+              <bucket>&quot;Roger Demir&quot;</bucket>
+              <bucket>&quot;Duane Noonan&quot;</bucket>
+              <bucket>&quot;Nat Carroll&quot;</bucket>
+              <bucket>&quot;Jennifer Braxton&quot;</bucket>
+              <bucket>&quot;Adrian Barton&quot;</bucket>
+              <bucket>&quot;Karen Daniels&quot;</bucket>
+              <bucket>&quot;Sharelle Roach&quot;</bucket>
+              <bucket>&quot;Tiffany House&quot;</bucket>
+              <bucket>&quot;Noel Staavos&quot;</bucket>
+              <bucket>&quot;Alejandro Grove&quot;</bucket>
+              <bucket>&quot;Roland Murray&quot;</bucket>
+              <bucket>&quot;Cindy Chapman&quot;</bucket>
+              <bucket>&quot;Brooke Gillingham&quot;</bucket>
+              <bucket>&quot;Andrew Roberts&quot;</bucket>
+              <bucket>&quot;Don Weiss&quot;</bucket>
+              <bucket>&quot;Michael Stewart&quot;</bucket>
+              <bucket>&quot;Muhammed MacIntyre&quot;</bucket>
+              <bucket>&quot;Bill Eplett&quot;</bucket>
+              <bucket>&quot;Robert Marley&quot;</bucket>
+              <bucket>&quot;Mike Vittorini&quot;</bucket>
+              <bucket>&quot;Todd Boyes&quot;</bucket>
+              <bucket>&quot;Sara Luxemburg&quot;</bucket>
+              <bucket>&quot;Anna Häberlin&quot;</bucket>
+              <bucket>&quot;Sally Hughsby&quot;</bucket>
+              <bucket>&quot;Amy Cox&quot;</bucket>
+              <bucket>&quot;Mark Hamilton&quot;</bucket>
+              <bucket>&quot;Rob Williams&quot;</bucket>
+              <bucket>&quot;Aaron Smayling&quot;</bucket>
+              <bucket>&quot;Tracy Collins&quot;</bucket>
+              <bucket>&quot;Eudokia Martin&quot;</bucket>
+              <bucket>&quot;Chris Selesnick&quot;</bucket>
+              <bucket>&quot;Dionis Lloyd&quot;</bucket>
+              <bucket>&quot;Tim Taslimi&quot;</bucket>
+              <bucket>&quot;Damala Kotsonis&quot;</bucket>
+              <bucket>&quot;Toby Carlisle&quot;</bucket>
+              <bucket>&quot;Meg O&apos;Connel&quot;</bucket>
+              <bucket>&quot;Benjamin Farhat&quot;</bucket>
+              <bucket>&quot;Tamara Dahlen&quot;</bucket>
+              <bucket>&quot;Adrian Shami&quot;</bucket>
+              <bucket>&quot;Aaron Hawkins&quot;</bucket>
+              <bucket>&quot;Carlos Soltero&quot;</bucket>
+              <bucket>&quot;Dave Poirier&quot;</bucket>
+              <bucket>&quot;Philip Fox&quot;</bucket>
+              <bucket>&quot;Becky Pak&quot;</bucket>
+              <bucket>&quot;Russell Applegate&quot;</bucket>
+              <bucket>&quot;Lori Olson&quot;</bucket>
+              <bucket>&quot;Kristina Nunn&quot;</bucket>
+              <bucket>&quot;Thomas Boland&quot;</bucket>
+              <bucket>&quot;Zuschuss Carroll&quot;</bucket>
+              <bucket>&quot;Fred Wasserman&quot;</bucket>
+              <bucket>&quot;John Castell&quot;</bucket>
+              <bucket>&quot;Roy Französisch&quot;</bucket>
+              <bucket>&quot;Marc Crier&quot;</bucket>
+              <bucket>&quot;Fred McMath&quot;</bucket>
+              <bucket>&quot;Shaun Chance&quot;</bucket>
+              <bucket>&quot;Greg Guthrie&quot;</bucket>
+              <bucket>&quot;Liz MacKendrick&quot;</bucket>
+              <bucket>&quot;Alejandro Ballentine&quot;</bucket>
+              <bucket>&quot;Lindsay Castell&quot;</bucket>
+              <bucket>&quot;Mark Haberlin&quot;</bucket>
+              <bucket>&quot;Darren Powers&quot;</bucket>
+              <bucket>&quot;Rick Reed&quot;</bucket>
+              <bucket>&quot;Brian DeCherney&quot;</bucket>
+              <bucket>&quot;Randy Ferguson&quot;</bucket>
+              <bucket>&quot;Bart Folk&quot;</bucket>
+              <bucket>&quot;Ross DeVincentis&quot;</bucket>
+              <bucket>&quot;Fred Hopkins&quot;</bucket>
+              <bucket>&quot;Jeremy Ellison&quot;</bucket>
+              <bucket>&quot;Alex Avila&quot;</bucket>
+              <bucket>&quot;Clytie Kelty&quot;</bucket>
+              <bucket>&quot;Catherine Glotzbach&quot;</bucket>
+              <bucket>&quot;Alan Haines&quot;</bucket>
+              <bucket>&quot;Maxwell Schwartz&quot;</bucket>
+              <bucket>&quot;Alan Schoenberger&quot;</bucket>
+              <bucket>&quot;Cari Schnelling&quot;</bucket>
+              <bucket>&quot;Deborah Brumfield&quot;</bucket>
+              <bucket>&quot;Sanjit Jacobs&quot;</bucket>
+              <bucket>&quot;Erin Creighton&quot;</bucket>
+              <bucket>&quot;Grant Thornton&quot;</bucket>
+              <bucket>&quot;Philip Brown&quot;</bucket>
+              <bucket>&quot;Rick Bensley&quot;</bucket>
+              <bucket>&quot;John Huston&quot;</bucket>
+              <bucket>&quot;Roland Fjeld&quot;</bucket>
+              <bucket>&quot;Clay Ludtke&quot;</bucket>
+              <bucket>&quot;Don Jones&quot;</bucket>
+              <bucket>&quot;Henia Zydlo&quot;</bucket>
+              <bucket>&quot;John Lee&quot;</bucket>
+              <bucket>&quot;Julie Prescott&quot;</bucket>
+              <bucket>&quot;Mick Crebagga&quot;</bucket>
+              <bucket>&quot;Barbara Fisher&quot;</bucket>
+              <bucket>&quot;Andy Reiter&quot;</bucket>
+              <bucket>&quot;Toby Swindell&quot;</bucket>
+              <bucket>&quot;Penelope Sewall&quot;</bucket>
+              <bucket>&quot;Ed Braxton&quot;</bucket>
+              <bucket>&quot;Eugene Barchas&quot;</bucket>
+              <bucket>&quot;Alan Dominguez&quot;</bucket>
+              <bucket>&quot;Shahid Collister&quot;</bucket>
+              <bucket>&quot;Troy Staebel&quot;</bucket>
+              <bucket>&quot;Barry Weirich&quot;</bucket>
+              <bucket>&quot;Allen Goldenen&quot;</bucket>
+              <bucket>&quot;Cindy Schnelling&quot;</bucket>
+              <bucket>&quot;Thomas Thornton&quot;</bucket>
+              <bucket>&quot;Denise Leinenbach&quot;</bucket>
+              <bucket>&quot;Clay Rozendal&quot;</bucket>
+              <bucket>&quot;Susan Gilcrest&quot;</bucket>
+              <bucket>&quot;Christina Anderson&quot;</bucket>
+              <bucket>&quot;Frank Olsen&quot;</bucket>
+              <bucket>&quot;Linda Cazamias&quot;</bucket>
+              <bucket>&quot;Paul Stevenson&quot;</bucket>
+              <bucket>&quot;Arianne Irving&quot;</bucket>
+              <bucket>&quot;Bobby Odegard&quot;</bucket>
+              <bucket>&quot;Michael Chen&quot;</bucket>
+              <bucket>&quot;Hallie Redmond&quot;</bucket>
+              <bucket>&quot;Karen Carlisle&quot;</bucket>
+              <bucket>&quot;Dan Campbell&quot;</bucket>
+              <bucket>&quot;Rob Dowd&quot;</bucket>
+              <bucket>&quot;Anthony Johnson&quot;</bucket>
+              <bucket>&quot;Quincy Jones&quot;</bucket>
+              <bucket>&quot;Henry MacAllister&quot;</bucket>
+              <bucket>&quot;Jasper Cacioppo&quot;</bucket>
+              <bucket>&quot;Sarah Foster&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:City:nk]</column>
+            <column>[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Customer Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Customer Name:nk]' value='37' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.08qoawc1mpg0ex149oxdd184zsoe].[none:City:nk] / [federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Customer Name:nk])</rows>
+        <cols>[federated.08qoawc1mpg0ex149oxdd184zsoe].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{337A2778-1A16-4D46-8FAA-74144F56D8AC}' />
+    </worksheet>
+    <worksheet name='Context Filter-1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore)' name='federated.08qoawc1mpg0ex149oxdd184zsoe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08qoawc1mpg0ex149oxdd184zsoe'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Category:nk]' context='true'>
+            <groupfilter function='member' level='[none:Category:nk]' member='&quot;Furniture&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Sub-Category:nk]'>
+            <groupfilter count='3' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Sales])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Sub-Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Sub-Category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.08qoawc1mpg0ex149oxdd184zsoe].[sum:Sales:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Category:nk]</column>
+            <column>[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Sub-Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Sub-Category:nk]' value='41' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Sub-Category:nk]</rows>
+        <cols>[federated.08qoawc1mpg0ex149oxdd184zsoe].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{312AF993-450A-4405-BB74-AB5278D21D43}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Context Filter-1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Category:nk]</field>
+            <field>[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Sub-Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8453C652-27D0-4FDB-B073-B7D1CD548313}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Context Filter - 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:City:nk]</field>
+            <field>[federated.08qoawc1mpg0ex149oxdd184zsoe].[none:Customer Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8EAAC425-FC75-485E-B485-23854BABE19E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Context Filter - 2' width='192'>
+      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
+      P1QQNb8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Context Filter-1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
